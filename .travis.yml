@@ -1,0 +1,15 @@
+language: java
+
+jdk:
+  - openjdk8
+  
+branches:
+  only:
+  - master
+  - development
+
+before_install: 
+  - sudo apt update
+
+install:
+  - sudo apt install maven -y
