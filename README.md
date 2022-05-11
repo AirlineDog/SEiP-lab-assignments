@@ -1,10 +1,12 @@
+[![Build Status](https://app.travis-ci.com/AirlineDog/SEiP-lab-assignments.svg?token=2sThSc69CiqprTWtxbu9&branch=main)](https://app.travis-ci.com/AirlineDog/SEiP-lab-assignments)
+
 # SEiP-lab-assignments 2022
 
 This repository is used for the Software Eningineering in Practice (SEiP) course taught in Athens University of Economics and Business Department of Management Science & Technology.
 
 ## Modules
-- [Histogram Generator](./seip2020_practical_assignments/gradeshistogram/) Takes a grades txt file and generates a histogram
-- [JUnit Test](./seip2020_practical_assignments/unittesting/) Implements some arithmetic functions and includes various test cases and techniques
+- [Histogram Generator](./gradeshistogram/) Takes a grades txt file and generates a histogram
+- [JUnit Test](./unittesting/) Implements some arithmetic functions and includes various test cases and techniques
 
 ## Required Tools
 
