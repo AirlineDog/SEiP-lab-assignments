@@ -16,4 +16,4 @@ install:
 
 script:
   - mvn clean
-  - mvn package: jacoco:report
+  - mvn package jacoco:report
