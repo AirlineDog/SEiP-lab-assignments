@@ -1,4 +1,6 @@
 [![Build Status](https://app.travis-ci.com/AirlineDog/SEiP-lab-assignments.svg?token=2sThSc69CiqprTWtxbu9&branch=main)](https://app.travis-ci.com/AirlineDog/SEiP-lab-assignments)
+[![Java CI with Maven](https://github.com/AirlineDog/SEiP-lab-assignments/actions/workflows/maven.yml/badge.svg)](https://github.com/AirlineDog/SEiP-lab-assignments/actions/workflows/maven.yml)
+
 
 # SEiP-lab-assignments 2022
 
