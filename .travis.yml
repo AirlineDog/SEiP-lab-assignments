@@ -13,3 +13,7 @@ before_install:
 
 install:
   - sudo apt install maven -y
+
+script:
+  - mvn clean
+  - mvn package: jacoco:report
