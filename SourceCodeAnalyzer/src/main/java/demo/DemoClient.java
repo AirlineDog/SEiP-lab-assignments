@@ -30,7 +30,7 @@ public class DemoClient {
 		}
 		SourceCodeAnalyzerFactory srcfct = new SourceCodeAnalyzerFactory();
 
-		SourceCodeAnalyzer analyzer = srcfct.createSourceCodeAnalyzer(sourceFileLocation);
+		SourceCodeAnalyzer analyzer = srcfct.createSourceCodeAnalyzer(sourceCodeAnalyzerType, sourceFileLocation);
 
 		int loc = analyzer.calculateLOC(filepath);
 		int nom = analyzer.calculateNOM(filepath);

@@ -1,12 +1,12 @@
 package codeanalyzer;
 
 public class SourceCodeAnalyzerFactory {
-	public SourceCodeAnalyzer createSourceCodeAnalyzer(String type) {
+	public SourceCodeAnalyzer createSourceCodeAnalyzer(String sourceCodeAnalyzerType, String sourceFileLocation) {
 		SourceCodeAnalyzer analyzer;
-		if (type.equals("regex")) {
-			analyzer = new RegexSourceCodeAnalyzer(type);
-		}else if (type.equals("strcomp")) {
-			analyzer = new StrcompSourceCodeAnalyzer(type);
+		if (sourceCodeAnalyzerType.equals("regex")) {
+			analyzer = new RegexSourceCodeAnalyzer(sourceFileLocation);
+		}else if (sourceCodeAnalyzerType.equals("strcomp")) {
+			analyzer = new StrcompSourceCodeAnalyzer(sourceFileLocation);
 		}else {
 			throw new IllegalArgumentException();
 		}
