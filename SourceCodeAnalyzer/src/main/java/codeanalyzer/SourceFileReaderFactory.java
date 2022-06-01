@@ -9,7 +9,7 @@ public class SourceFileReaderFactory {
 		}else if (type.equals("web")) {
 			reader = new WebSourceFileReader();
 		}else {
-			throw new IllegalArgumentException();
+			return new NullSourceFileReader();
 		}
 		return reader;
 	}
