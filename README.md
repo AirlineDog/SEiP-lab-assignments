@@ -3,7 +3,9 @@
 This repository is used for the Software Eningineering in Practice (SEiP) course taught in Athens University of Economics and Business Department of Management Science & Technology.
 
 ## Modules
-- [Histogram Generator](./seip2020_practical_assignments/gradeshistogram/) Takes a grades txt file and generates a histogram
+- [Histogram Generator](./gradeshistogram/) Takes a grades txt file and generates a histogram
+- [JUnit Test](./unittesting/) Implements some arithmetic functions and includes various test cases and techniques
+- [Source Code Analyzer](./SourceCodeAnalyzer/) Reads a Java source code file that is stored locally or on the web, calculates the Lines of Code (LOC), Number of Classes (NOC), and Number of Methods (NOM) metrics, and finally, exports  these metrics to an output file
 
 ## Required Tools
 
