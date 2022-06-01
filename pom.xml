@@ -9,6 +9,7 @@
   <description>A project for all the assignments of the SEiP course.</description>
     
   <modules>
-  	<module>gradeshistogram</module>
+    <module>gradeshistogram</module>
+    <module>SourceCodeAnalyzer</module>
   </modules>
 </project>
