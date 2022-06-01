@@ -9,7 +9,8 @@ public class RegexSourceCodeAnalyzer implements SourceCodeAnalyzer {
 	private SourceFileReader fileReader;
 
 	public RegexSourceCodeAnalyzer(String fileReaderType) {
-		this.fileReader = new SourceFileReader(fileReaderType);
+		SourceFileReaderFactory fct = new SourceFileReaderFactory();
+		this.fileReader = fct.createSourceFileReader(fileReaderType);
 	}
 
 	@Override
