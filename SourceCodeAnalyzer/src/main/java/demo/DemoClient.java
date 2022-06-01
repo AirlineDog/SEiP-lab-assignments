@@ -1,13 +1,8 @@
 package demo;
 
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
 
-import codeanalyzer.MetricsExporter;
-import codeanalyzer.MetricsExporterFactory;
-import codeanalyzer.SourceCodeAnalyzer;
-import codeanalyzer.SourceCodeAnalyzerFactory;
+import codeanalyzer.Facade;
 
 public class DemoClient {
 
@@ -28,22 +23,8 @@ public class DemoClient {
 			System.out.println("Incorrect number of arguments.");
 			System.exit(1);
 		}
-		SourceCodeAnalyzerFactory srcfct = new SourceCodeAnalyzerFactory();
-
-		SourceCodeAnalyzer analyzer = srcfct.createSourceCodeAnalyzer(sourceCodeAnalyzerType, sourceFileLocation);
-
-		int loc = analyzer.calculateLOC(filepath);
-		int nom = analyzer.calculateNOM(filepath);
-		int noc = analyzer.calculateNOC(filepath);
-
-		Map<String, Integer> metrics = new HashMap<>();
-		metrics.put("loc",loc);
-		metrics.put("nom",nom);
-		metrics.put("noc",noc);
-
-		MetricsExporterFactory expfct = new MetricsExporterFactory();
-		MetricsExporter exporter = expfct.createMetricsExporter(outputFileType);
-		exporter.writeFile(metrics, outputFilePath);
+		Facade fc = new Facade();
+		fc.analyze(sourceCodeAnalyzerType, sourceFileLocation, filepath, outputFileType, outputFilePath);
 
 	}
 
