@@ -4,6 +4,11 @@ import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
 
+import codeanalyzer.analyzers.SourceCodeAnalyzer;
+import codeanalyzer.analyzers.SourceCodeAnalyzerFactory;
+import codeanalyzer.exporters.MetricsExporter;
+import codeanalyzer.exporters.MetricsExporterFactory;
+
 public class Facade {
 
 	public void analyze(String sourceCodeAnalyzerType, String sourceFileLocation, String filepath, String outputFileType, String outputFilePath) throws IOException {

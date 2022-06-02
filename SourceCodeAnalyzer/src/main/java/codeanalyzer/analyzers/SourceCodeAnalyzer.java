@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
 
 import java.io.IOException;
 

@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.exporters;
 
 import java.util.Map;
 

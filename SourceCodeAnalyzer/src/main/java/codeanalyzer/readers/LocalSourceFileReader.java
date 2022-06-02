@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.readers;
 
 import java.io.BufferedReader;
 import java.io.File;

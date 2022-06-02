@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.readers;
 
 import java.io.IOException;
 import java.util.List;

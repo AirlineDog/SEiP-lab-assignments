@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.exporters;
 
 public class MetricsExporterFactory {
 	public MetricsExporter createMetricsExporter(String type) {

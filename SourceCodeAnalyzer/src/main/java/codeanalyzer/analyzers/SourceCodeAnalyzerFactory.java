@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
 
 public class SourceCodeAnalyzerFactory {
 	public SourceCodeAnalyzer createSourceCodeAnalyzer(String sourceCodeAnalyzerType, String sourceFileLocation) {

@@ -1,8 +1,11 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
 
 import java.io.IOException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
+
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderFactory;
 
 public class RegexSourceCodeAnalyzer implements SourceCodeAnalyzer {
 

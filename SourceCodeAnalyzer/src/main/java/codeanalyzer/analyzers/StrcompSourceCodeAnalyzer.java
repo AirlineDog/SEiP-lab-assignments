@@ -1,7 +1,10 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
 
 import java.io.IOException;
 import java.util.List;
+
+import codeanalyzer.readers.SourceFileReader;
+import codeanalyzer.readers.SourceFileReaderFactory;
 
 public class StrcompSourceCodeAnalyzer implements SourceCodeAnalyzer {
 
