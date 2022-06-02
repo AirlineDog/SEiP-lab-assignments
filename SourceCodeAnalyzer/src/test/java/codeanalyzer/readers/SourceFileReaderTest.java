@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.readers;
 
 import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertEquals;

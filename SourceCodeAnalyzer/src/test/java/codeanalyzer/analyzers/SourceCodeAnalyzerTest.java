@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.analyzers;
 
 import static org.junit.Assert.assertEquals;
 

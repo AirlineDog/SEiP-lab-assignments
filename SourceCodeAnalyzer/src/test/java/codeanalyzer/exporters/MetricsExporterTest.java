@@ -1,4 +1,4 @@
-package codeanalyzer;
+package codeanalyzer.exporters;
 
 import static org.mockito.Mockito.doCallRealMethod;
 import static org.mockito.Mockito.mock;
