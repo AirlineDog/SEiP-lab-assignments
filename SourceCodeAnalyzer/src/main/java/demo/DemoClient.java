@@ -2,8 +2,6 @@ package demo;
 
 import java.io.IOException;
 
-import codeanalyzer.Facade;
-
 public class DemoClient {
 
 	public static void main(String[] args) throws IOException {
@@ -13,7 +11,7 @@ public class DemoClient {
 		String outputFilePath = "output_metrics";
 		String outputFileType = "csv";
 
-		if(args.length == 5) {
+		if (args.length == 5) {
 			filepath = args[0];
 			sourceCodeAnalyzerType = args[1];
 			sourceFileLocation = args[2];
