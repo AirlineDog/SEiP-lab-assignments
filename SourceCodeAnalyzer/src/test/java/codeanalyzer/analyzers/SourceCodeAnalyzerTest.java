@@ -52,4 +52,9 @@ public class SourceCodeAnalyzerTest {
 		assertEquals(3, sca.calculateNOC(TEST_CLASS));
 	}
 
+	@Test(expected = IllegalArgumentException.class)
+	public void testUnknownAnalyzerType() {
+		SourceCodeAnalyzer sca = fct.createSourceCodeAnalyzer("unknown", TYPE_LOCAL);
+	}
+
 }
