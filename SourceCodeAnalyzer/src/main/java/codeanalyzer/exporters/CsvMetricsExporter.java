@@ -5,6 +5,10 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.util.Map;
 
+/**
+ * Exports (writes) the metrics to a given output.
+ * The output is in CSV files.
+ */
 public class CsvMetricsExporter implements MetricsExporter {
 
 	@Override

@@ -2,6 +2,10 @@ package codeanalyzer.exporters;
 
 import java.util.Map;
 
+/**
+ * Exports (writes) the metrics to a given output.
+ * The output is in JSON files.
+ */
 public class JsonMetricsExporter implements MetricsExporter {
 
 	@Override
