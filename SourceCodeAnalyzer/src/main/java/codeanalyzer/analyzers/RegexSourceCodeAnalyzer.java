@@ -7,6 +7,13 @@ import java.util.regex.Pattern;
 import codeanalyzer.readers.SourceFileReader;
 import codeanalyzer.readers.SourceFileReaderFactory;
 
+/**
+ * Analyzes the contents of a Java source code file and calculates the following
+ * metrics: loc = lines of code, nom = number of methods, and noc=number of
+ * classes. This class supports regex source code analysis, (with the use of
+ * regular expressions)
+ *
+ */
 public class RegexSourceCodeAnalyzer implements SourceCodeAnalyzer {
 
 	private SourceFileReader fileReader;
