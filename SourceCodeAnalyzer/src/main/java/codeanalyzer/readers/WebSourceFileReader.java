@@ -7,6 +7,10 @@ import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Retrieves (reads) the contents of a given file.
+ * The file will be stored on the web.
+ */
 public class WebSourceFileReader implements SourceFileReader {
 
 	@Override

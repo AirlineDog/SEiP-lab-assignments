@@ -7,6 +7,10 @@ import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
+/**
+ * Retrieves (reads) the contents of a given file.
+ * The file will be stored locally.
+ */
 public class LocalSourceFileReader implements SourceFileReader {
 
 	@Override
