@@ -7,7 +7,7 @@ branches:
   only:
   - master
   - development
-  - development-part4
+  - development2
 
 before_install: 
   - sudo apt update
