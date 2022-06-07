@@ -43,7 +43,17 @@ public class MyMathTest {
 	}
 
 	@Test (expected = IllegalArgumentException.class)
-	public void test_isPrime_less_than_2() {
+	public void test_isPrime_negative() {
+		mm.isPrime(-1);
+	}
+
+	@Test (expected = IllegalArgumentException.class)
+	public void test_isPrime_0() {
+		mm.isPrime(0);
+	}
+
+	@Test (expected = IllegalArgumentException.class)
+	public void test_isPrime_1() {
 		mm.isPrime(1);
 	}
 
