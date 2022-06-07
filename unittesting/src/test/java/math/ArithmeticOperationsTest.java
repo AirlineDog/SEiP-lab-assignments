@@ -27,6 +27,11 @@ public class ArithmeticOperationsTest {
 	}
 
 	@Test
+	public void test_division_with_numerator_zero() {
+		Assert.assertEquals(0, arop.divide(0, 5), 0);
+	}
+
+	@Test
 	public void test_multiply_with_x_zero() {
 		Assert.assertEquals(0, arop.multiply(0, 10), 0);
 	}
@@ -47,16 +52,21 @@ public class ArithmeticOperationsTest {
 	}
 
 	@Test
-	public void test_multiply_with_big_positives() {
+	public void test_multiply_with_big_positive_x() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
 		arop.multiply(Integer.MAX_VALUE / 2 + 1, 2);
 	}
 	@Test
-	public void test_multiply_with_b_positives() {
+	public void test_multiply_with_big_positive_y() {
 		thrown.expect(IllegalArgumentException.class);
 		thrown.expectMessage("The product does not fit in an Integer variable");
 		arop.multiply(2, Integer.MAX_VALUE / 2 + 1);
+	}
+	@Test
+	public void test_multiply_MAX_VALUE() {
+		Assert.assertEquals(Integer.MAX_VALUE, arop.multiply(2, Integer.MAX_VALUE / 2), 0);
+
 	}
 	@Test
 	public void test_multiply_with_x_negative() {
