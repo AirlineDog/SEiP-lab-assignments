@@ -7,8 +7,42 @@
   
   <name>SEiP-lab-assignments</name>
   <description>A project for all the assignments of the SEiP course.</description>
-    
+
   <modules>
   	<module>gradeshistogram</module>
+    <module>unittesting</module>
   </modules>
+  
+  <properties>
+   <maven.compiler.source>1.8</maven.compiler.source>
+   <maven.compiler.target>1.8</maven.compiler.target>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>junit</groupId>
+      <artifactId>junit</artifactId>
+      <version>4.12</version>
+      <scope>test</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+      <plugin>
+        <groupId>org.jacoco</groupId>
+        <artifactId>jacoco-maven-plugin</artifactId>
+        <version>0.8.8</version>
+        <executions>
+          <execution>
+            <id>prepare-agent</id>
+            <goals>
+              <goal>prepare-agent</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+
 </project>
