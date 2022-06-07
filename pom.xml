@@ -7,10 +7,11 @@
   
   <name>SEiP-lab-assignments</name>
   <description>A project for all the assignments of the SEiP course.</description>
-    
+
   <modules>
     <module>gradeshistogram</module>
     <module>SourceCodeAnalyzer</module>
+    <module>unittesting</module>
   </modules>
   
   <properties>
