@@ -5,8 +5,9 @@ jdk:
   
 branches:
   only:
-  - master
+  - main
   - development
+  - development2
 
 before_install: 
   - sudo apt update
@@ -17,3 +18,11 @@ install:
 script:
   - mvn clean
   - mvn package jacoco:report
+
+after_script:
+  - cd SourceCodeAnalyzer
+  - java -jar target/SourceCodeAnalyzer-0.0.1-SNAPSHOT-jar-with-dependencies.jar
+  - diff output_metrics.csv src/main/resources/manual_metrics.csv || exit 1
+
+after_success:
+  - echo "Everything went well"
